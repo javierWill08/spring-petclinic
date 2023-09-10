@@ -8,4 +8,4 @@ COPY src ./src
 RUN mvn clean 
 RUN mvn package
 
-CMD ["java", "-jar", "target/spring-petclinic.jar"]
+CMD ["java", "-jar", "target/spring-petclinic.jar", "exec:java"]
